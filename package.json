@@ -1,0 +1,36 @@
+{
+  "name": "koa-frame",
+  "version": "1.0.0",
+  "description": "基于 Koa 快速搭建后台 Demo",
+  "main": "./src/app.js",
+  "scripts": {
+    "dev": "nodemon ./src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cloudyun258/koa-frame.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cloudyun258/koa-frame/issues"
+  },
+  "homepage": "https://github.com/cloudyun258/koa-frame#readme",
+  "dependencies": {
+    "@koa/cors": "^3.3.0",
+    "@koa/router": "^10.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.4",
+    "koa-body": "^5.0.0",
+    "koa-json-error": "^3.1.2",
+    "koa-jwt": "^4.0.3",
+    "koa-mount": "^4.0.0",
+    "koa-parameter": "^3.0.1",
+    "koa-static": "^5.0.0",
+    "mongoose": "^6.3.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
