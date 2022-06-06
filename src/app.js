@@ -16,7 +16,6 @@ const { port, url } = require('./config.js')
 const uploadConfig = {
   // 支持文件上传
   multipart: true,
-  // 文件上传相关配置
   formidable: {
     // 保留文件后缀
     keepExtensions: true,
