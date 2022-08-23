@@ -14,14 +14,14 @@ const { port, url } = require('./config.js')
 
 // koa-body 配置对象
 const uploadConfig = {
-  // 支持文件上传
-  multipart: true,
-  formidable: {
-    // 保留文件后缀
-    keepExtensions: true,
-    // 限制文件上传大小为 100M
-    maxFieldsSize: 100 * 1024 * 1024
-  }
+    // 支持文件上传
+    multipart: true,
+    formidable: {
+        // 保留文件后缀
+        keepExtensions: true,
+        // 限制文件上传大小为 100M
+        maxFieldsSize: 100 * 1024 * 1024
+    }
 }
 
 // 参数校验中间件
@@ -39,6 +39,6 @@ app.use(Router.routes())
 // 405 请求方式错误
 app.use(Router.allowedMethods())
 
-app.listen(port, () => { 
-  console.log(`Run In: ${url}`) 
+app.listen(port, () => {
+    console.log(`Run In: ${url}`)
 })

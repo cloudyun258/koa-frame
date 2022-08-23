@@ -6,12 +6,12 @@ const response = require('./utils/response')
 const router = new Router({ prefix: '/api' })
 
 router.get('/user', async (ctx, next) => {
-  await UserModel.create({ 
-    username: 'Koa-Frame', 
-    password: '123456' 
-  })
-  const userData = await UserModel.find()
-  ctx.body = response(0, '请求成功', userData)
+    await UserModel.create({
+        username: 'Koa-Frame',
+        password: '123456'
+    })
+    const userData = await UserModel.find()
+    ctx.body = response(0, '请求成功', userData)
 })
 
 module.exports = router
