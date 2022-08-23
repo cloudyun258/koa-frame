@@ -4,7 +4,7 @@
 
  module.exports = {
 	// token密钥
-	tokenSecret: 'koa-frame-202219970917',
+	tokenSecret: 'koa-frame-202219990917',
 	// 数据库信息
 	dbInfo: {
 		name: 'koa-frame',

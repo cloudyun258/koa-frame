@@ -1,7 +1,7 @@
 /**
  *  请求成功响应的统一数据格式
  */
-const response = (code, msg, data = {}) => {
+const sendResponse = (code, msg, data = {}) => {
 	return {
 		code,
 		msg,
@@ -9,4 +9,4 @@ const response = (code, msg, data = {}) => {
 	}
 }
 
-module.exports = response
+module.exports = sendResponse

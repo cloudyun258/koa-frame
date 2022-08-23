@@ -1,7 +1,8 @@
 /**
  * 文件上传处理中间件
  */
- const res = require('../utils/response')
+
+ const sendResponse = require('../utils/sendResponse')
  const random = require('../utils/random')
  const fs = require('fs')
  const path = require('path')
@@ -48,7 +49,7 @@
     // 写入文件
     reader.pipe(write)
 
-    ctx.body = res(0, '文件上传成功', { file, url })
+    ctx.body = sendResponse(0, '文件上传成功', { file, url })
  }
 
  module.exports = upload

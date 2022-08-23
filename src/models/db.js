@@ -16,5 +16,4 @@
 
  mongoose.connection.once('open', () => { console.log('数据库连接成功 Success~') })
 
- // 将 mongoose 导出
  module.exports = mongoose
