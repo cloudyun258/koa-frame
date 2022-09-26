@@ -1,17 +1,11 @@
 const Router = require('@koa/router')
-const UserModel = require('./models/user')
 const sendResponse = require('./utils/sendResponse')
 
-// 实例化路由对象，并设置路由前缀
-const router = new Router({ prefix: '/api' })
+const router = new Router()
 
-router.get('/user', async (ctx, next) => {
-    await UserModel.create({
-        username: 'Koa-Frame',
-        password: '123456'
-    })
-    const userData = await UserModel.find()
-    ctx.body = sendResponse(0, '请求成功', userData)
+
+router.get('/test', ctx => {
+    ctx.body = sendResponse(0, '请求成功', 'HelloWorld')
 })
 
 module.exports = router

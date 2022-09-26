@@ -16,7 +16,6 @@
 	},
 	domain: 'localhost',
 	port: 3009,
-	// 完整域名
 	get url() {
         return `http://${this.domain}:${this.port}`
     },

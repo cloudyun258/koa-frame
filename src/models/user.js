@@ -1,6 +1,6 @@
 const mongoose = require('./db')
 
-// 广告位模型定义
+// 用户模型定义
 const UserSchema = mongoose.Schema({
     username: { type: String },
     password: { type: String }

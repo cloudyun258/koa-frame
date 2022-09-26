@@ -2,12 +2,12 @@
  * 文件上传处理中间件
  */
 
- const sendResponse = require('../utils/sendResponse')
- const random = require('../utils/random')
  const fs = require('fs')
  const path = require('path')
+ const sendResponse = require('../utils/sendResponse')
+ const random = require('../utils/random')
 
- const upload = (ctx, next) => {
+ const upload = (ctx) => {
 
     // 获取请求的路由参数
     const { mime, type } = ctx.request.params
@@ -51,5 +51,6 @@
 
     ctx.body = sendResponse(0, '文件上传成功', { file, url })
  }
+
 
  module.exports = upload
