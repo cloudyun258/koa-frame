@@ -1,7 +1,7 @@
 {
   "name": "koa-frame",
   "version": "1.0.0",
-  "description": "基于 Koa 快速搭建后台项目",
+  "description": "基于 Koa 快速搭建后端项目",
   "main": "./src/app.js",
   "scripts": {
     "dev": "nodemon ./src/app.js"
